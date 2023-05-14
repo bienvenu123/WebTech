@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <style>
+
+    .all{
+      background-color: #A2A378;
+      height:600px;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    nav ul li:hover {
+      background-color: #555;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul ul li {
+      margin-right: 0;
+      display: block;
+    }
+
+    nav ul ul li a {
+      padding: 10px;
+      display: block;
+      color: #fff;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .container {
+      overflow: auto;
+      height: 450px;
+      width: 750px;
+    }
+      .lawyer1{
+        height: 200px;
+        width: 200px;
+        background-color: #A2A378;
+      }
+      .lawyer2{
+        height: 200px;
+        width: 200px;
+        background-color:#A2A378;
+        margin-left: 210px;
+        margin-top: -200px;
+      }
+    .lawyer3{
+      height: 200px;
+      width: 200px;
+      margin-left: 410px;
+      margin-top: -200px;
+      background-color: #A2A378;
+    }
+    .lawyer4{
+      height: 200px;
+      width: 200px;
+      background-color: #A2A378;
+    }
+    .lawyer5{
+      height: 200px;
+      width: 200px;
+      margin-left: 210px;
+      margin-top: -200px;
+      background-color: #A2A378;
+    }
+    .lawyer6{
+      height: 200px;
+      width: 200px;
+      margin-left: 410px;
+      margin-top: -200px;
+    background-color:#A2A378;
+       }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a th:href="@{tem}">Home</a></li>
+      <li><a th:href="@{student-page}">Register</a></li>
+      <li><a th:href="@{contact}">Suggestion</a></li>
+      <li><a th:href="@{lawyer}">PSYCHO-descr</a></li>
+      <li><a th:href="@{login-page}">logout</a></li>
+
+  </nav>
+</header>
+<div class="all">
+  <h1 class="text-center">BIBA AFRICA</h1>
+  <div class="container">
+
+    <div class="row">
+
+    </div>
+    <div class="lawyer1"><b><u>Junior Associate</u></b><br><br>Typically an entry-level position for new psycho at law firms,</div>
+    <div class="lawyer2"><b><u>Senior Associate</u></b><br><br>more experienced lawyer with a few years of practice under their belt</div>
+    <div class="lawyer3"><b><u>Partner</u></b><br><br>senior pscho who owns a stake in the important business </div>
+    <div class="lawyer4"><b><u>Senior Partner</u></b><br><br> more experienced partner who has been with the firm for a longer period of time</div>
+    <div class="lawyer5"><b><u>Managing Partner</b></u><br><br>The head of the law firm who oversees all of  operations and manages strategic direction</div>
+    <div class="lawyer6"><b><u>General Counsel</b></u><br><br>senior lawyer who provides legal advice to a corporation,  </u></div>
+</div>
+</body>
+</html>
